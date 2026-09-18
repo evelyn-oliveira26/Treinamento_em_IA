@@ -31,7 +31,7 @@ y_pred = modelo.predict(X_te)
 print(y_pred[:8])
 print(y_te[:8])
 
-#avalia o desempenho
+#avaliando o desempenho
 print(accuracy_score(y_te, y_pred))
 print(confusion_matrix(y_te, y_pred))
 
