@@ -55,5 +55,5 @@ base.fit(X_tr, y_tr)
 print(base.score(X_te, y_te))
 
 #Análises importantes:
-#Decidi separar o modelo em 70% para treino e 30% para teste, e o modelo me retornou uma acurácia de 92.4%
+#Decidi separar o modelo em 70% para treino e 30% para teste, e o modelo me retornou uma acurácia de 92.4%.
 #Já na matriz de confusão podemos ver que o modelo acertou a maioria das classificações, mas também apresentou alguns erros na classificação dos diagnósticos.

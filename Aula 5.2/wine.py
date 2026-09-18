@@ -56,5 +56,5 @@ print(base.score(X_te, y_te))
 
 #Análises importantes:
 
-#Decidi separar o modelo em 70% para treino e 30% para teste, e o modelo me retornou uma acurácia de 72.22%
+#Decidi separar o modelo em 70% para treino e 30% para teste, e o modelo me retornou uma acurácia de 72.22%.
 #Já na matriz de confusão podemos ver que o modelo acertou a maioria das classes, mas também apresentou alguns erros na classificação dos vinhos.
