@@ -25,6 +25,7 @@ print('Split finalizado com sucesso!')
 #mostrando valores faltantes
 print(X_tr.isna().sum().sort_values(ascending=False))
 
+#pré-processamento
 num_cols = ['age', 'trestbps', 'chol', 'thalach', 'oldpeak'] #medidas quantitativas
 cat_cols = ['sex', 'cp', 'fbs', 'restecg', 'exang', 'slope', 'ca', 'thal'] #medidas categóricas
 
