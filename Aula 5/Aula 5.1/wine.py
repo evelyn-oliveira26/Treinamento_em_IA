@@ -24,7 +24,7 @@ X_tr, X_te, y_tr, y_te = train_test_split(X, y, test_size=0.3, stratify=y, rando
 
 print(X_tr.shape, X_te.shape)
 
-#fit (knn)
+#fit (KNN)
 modelo = KNeighborsClassifier(n_neighbors=5)
 print(modelo.fit(X_tr, y_tr))
 
@@ -53,6 +53,7 @@ base = DummyClassifier(strategy='most_frequent')
 base.fit(X_tr, y_tr)
 
 print(base.score(X_te, y_te))
+
 
 #Análises importantes:
 
