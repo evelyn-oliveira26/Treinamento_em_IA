@@ -88,7 +88,6 @@ nova = pd.DataFrame([{'age': 57.0, 'sex': 1.0, 'cp': 0.0, 'trestbps': 150.0,
                     'chol': 276.0, 'fbs': 0.0, 'restecg': 0.0, 'thalach': 112.0,
                     'exang': 1.0, 'oldpeak': 0.6, 'slope': 1.0, 'ca': 1.0, 'thal': 1.0}])
 
-
 #probabilidade estimada para classe 1
 print(modelo.predict_proba(nova)[0, 1].round(3))
 
