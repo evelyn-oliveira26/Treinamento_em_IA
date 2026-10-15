@@ -65,7 +65,6 @@ class Features(BaseEstimator, TransformerMixin):
 
         return X.drop(columns=["Name", "Cabin"])
 
-
 #cria o modelo
 def make_model(num_cols, cat_cols):
 
@@ -92,7 +91,6 @@ def make_model(num_cols, cat_cols):
         ("pre", pre),
         ("clf", LogisticRegression(max_iter=1000))
     ])
-
 
 #features do baseline
 NUM = ["Age", "SibSp", "Parch", "Fare"]
