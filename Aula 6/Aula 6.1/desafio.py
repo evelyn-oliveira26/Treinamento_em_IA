@@ -1,4 +1,3 @@
-
 import numpy as np
 import timeit
 from scipy.spatial.distance import cdist
