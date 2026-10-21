@@ -52,9 +52,7 @@ def meu_stratified_kfold(y, k=5, shuffle=False, random_state=None):
         yield train_idx, val_idx
 
 #cross-validation score
-def meu_cross_val_score(
-    modelo_factory, X, y, folds, metrica, ddof=1
-):
+def meu_cross_val_score(modelo_factory, X, y, folds, metrica, ddof=1):
     scores = []
 
     for train_idx, val_idx in folds:
