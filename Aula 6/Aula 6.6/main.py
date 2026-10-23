@@ -8,7 +8,7 @@ from sklearn.neighbors import NearestCentroid
 
 np.set_printoptions(precision=3, suppress=True)
 
-#criar o dataset
+#criando o dataset
 rng = np.random.default_rng(0)
 
 X0 = rng.normal(loc=[0, 0], scale=1.0, size=(90, 2))
