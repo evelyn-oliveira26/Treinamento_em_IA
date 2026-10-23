@@ -371,7 +371,7 @@ print(
 
 #implementação manual do cross-val-score
 def meu_cross_val_score(
-    modelo_factory, X, y, folds, metrica
+modelo_factory, X, y, folds, metrica
 ):
     """Calcula uma métrica para cada fold usando modelos novos."""
 
