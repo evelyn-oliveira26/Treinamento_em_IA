@@ -118,25 +118,25 @@ treino = [i for i in range(len(textos)) if i % 4 != 3]
 print("Treino:", treino)
 print("Teste:", teste)
 
-# Separar as mensagens
+#separar as mensagens
 textos_treino = [textos[i] for i in treino]
 textos_teste = [textos[i] for i in teste]
  
 y_treino = y[treino]
 y_teste = y[teste]
  
-# Construir o vocabulário somente com o treino
+#construir o vocabulário somente com o treino
 vocab = construir_vocabulario(textos_treino)
  
-# Vetorizar
+#vetorizar
 X_treino = vetorizar(textos_treino, vocab)
 X_teste = vetorizar(textos_teste, vocab)
  
-# Criar e treinar o modelo
+#criar e treinar o modelo
 modelo = NaiveBayesDoZero(alpha=1.0)
 modelo.fit(X_treino, y_treino)
  
-# Realizar previsões
+#realizar previsões
 previsoes = modelo.predict(X_teste)
 print("Valores reais:", y_teste)
 print("Previsões:", previsoes)
